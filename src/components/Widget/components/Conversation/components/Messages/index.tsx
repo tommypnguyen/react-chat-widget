@@ -51,9 +51,6 @@ function Messages({ profileAvatar, showTimeStamp }: Props) {
     <div id="messages" className="rcw-messages-container" ref={messageRef}>
       {messages?.map((message, index) =>
         <div className="rcw-message" key={`${index}-${format(message.timestamp, 'hh:mm')}`}>
-          {profileAvatar &&
-            <span className="rcw-timestamp">{profileAvatar}</span>
-          }
           {getComponentToRender(message)}
         </div>
       )}
