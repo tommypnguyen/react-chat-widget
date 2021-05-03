@@ -20,7 +20,7 @@ export function toggleMsgLoader() {
   store.dispatch(actions.toggleMsgLoader());
 }
 
-export function renderCustomComponent(component: ElementType, props: any, showAvatar = false, id?: string) {
+export function renderCustomComponent(component: ElementType, props: any, showAvatar = true, id?: string) {
   store.dispatch(actions.renderCustomComponent(component, props, showAvatar, id));
 }
 
