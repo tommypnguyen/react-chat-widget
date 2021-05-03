@@ -13,6 +13,7 @@ type Props = {
   title?: string;
   titleAvatar?: string;
   subtitle?: string;
+  user?: string;
   senderPlaceHolder?: string;
   showCloseButton?: boolean;
   fullScreenMode?: boolean;
@@ -34,6 +35,7 @@ function ConnectedWidget({
   title,
   titleAvatar,
   subtitle,
+  user,
   senderPlaceHolder,
   showCloseButton,
   fullScreenMode,
@@ -58,6 +60,7 @@ function ConnectedWidget({
         title={title}
         titleAvatar={titleAvatar}
         subtitle={subtitle}
+        user={user}
         handleNewUserMessage={handleNewUserMessage}
         handleQuickButtonClicked={handleQuickButtonClicked}
         senderPlaceHolder={senderPlaceHolder}
@@ -84,6 +87,7 @@ const defaultProps = {
   title: 'Welcome',
   subtitle: 'This is your chat subtitle',
   senderPlaceHolder: 'Type a message...',
+  user: 'Tommy',
   showCloseButton: true,
   fullScreenMode: false,
   autofocus: true,

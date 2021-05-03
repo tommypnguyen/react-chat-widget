@@ -13,6 +13,7 @@ import './style.scss';
 type Props = {
   title: string;
   subtitle: string;
+  user: string;
   senderPlaceHolder: string;
   showCloseButton: boolean;
   disabledInput: boolean;

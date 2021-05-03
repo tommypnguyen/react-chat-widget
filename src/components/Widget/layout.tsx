@@ -16,6 +16,7 @@ type Props = {
   title: string;
   titleAvatar?: string;
   subtitle: string;
+  user: string;
   onSendMessage: AnyFunction;
   onToggleConversation: AnyFunction;
   senderPlaceHolder: string;
@@ -39,6 +40,7 @@ function WidgetLayout({
   title,
   titleAvatar,
   subtitle,
+  user,
   onSendMessage,
   onToggleConversation,
   senderPlaceHolder,
@@ -118,6 +120,7 @@ function WidgetLayout({
         <Conversation
           title={title}
           subtitle={subtitle}
+          user={user}
           sendMessage={onSendMessage}
           senderPlaceHolder={senderPlaceHolder}
           profileAvatar={profileAvatar}

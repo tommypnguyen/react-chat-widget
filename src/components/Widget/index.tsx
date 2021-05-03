@@ -10,6 +10,7 @@ type Props = {
   title: string;
   titleAvatar?: string;
   subtitle: string;
+  user: string;
   senderPlaceHolder: string;
   profileAvatar?: string;
   showCloseButton: boolean;
@@ -33,6 +34,7 @@ function Widget({
   title,
   titleAvatar,
   subtitle,
+  user,
   senderPlaceHolder,
   profileAvatar,
   showCloseButton,
@@ -84,6 +86,7 @@ function Widget({
       title={title}
       titleAvatar={titleAvatar}
       subtitle={subtitle}
+      user={user}
       senderPlaceHolder={senderPlaceHolder}
       profileAvatar={profileAvatar}
       showCloseButton={showCloseButton}
