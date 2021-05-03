@@ -13,7 +13,6 @@ type BaseMessage = {
 
 export interface Message extends BaseMessage {
   text: string;
-  user: string;
 };
 
 export type QuickButton = {
